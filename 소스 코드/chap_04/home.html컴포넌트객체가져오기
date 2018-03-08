@@ -1,0 +1,15 @@
+<ion-content>
+  <div>
+    <button ion-button (click)="open()"> 선택 </button>
+  </div>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Gender</ion-label>
+      <ion-select #select [(ngModel)]="gender">
+        <ion-option value="f">Female</ion-option>
+        <ion-option value="m">Male</ion-option>
+      </ion-select>
+    </ion-item>
+...
+

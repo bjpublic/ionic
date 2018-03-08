@@ -1,0 +1,22 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>order</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+    <div text-center>
+    <h1>{{menu.menuName}}</h1>
+    <img [src]="menu.fullpath" >
+    <h3>{{menu.price}}</h3>
+    </div>
+    <ion-row text-center>
+      <ion-col>
+          <button ion-button (click)="cancel()">취소</button>
+      </ion-col>
+      <ion-col>
+          <button ion-button>주문</button>
+      </ion-col>
+    </ion-row>
+</ion-content>

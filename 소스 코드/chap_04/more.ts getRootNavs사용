@@ -1,0 +1,17 @@
+import { IonicPage, NavController, NavParams,App } from 'ionic-angular';
+import { NextPage} from '../next/next';
+
+@IonicPage()
+@Component({
+  selector: 'page-more',
+  templateUrl: 'more.html',
+})
+export class MorePage {
+
+  constructor(public navCtrl: NavController, public navParams: NavParams,private app:App) {
+  }
+
+  moveNextPage(){
+     this.app.getRootNavs()[0].push(NextPage); 
+  }
+}

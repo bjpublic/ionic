@@ -1,0 +1,8 @@
+$default-font-size:4vw;
+$default-color:#6441a5;
+
+@mixin calc($property, $expression) { 
+        #{$property}: -webkit-calc(#{$expression}); 
+        #{$property}: -moz-calc(#{$expression});
+        #{$property}: calc(#{$expression}); 
+} 

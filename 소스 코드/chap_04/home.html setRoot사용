@@ -1,0 +1,4 @@
+
+<ion-content padding>
+  <button ion-button (click)="moveToNextPageWithSetRoot()"> Move to next page with setRoot</button>
+</ion-content>

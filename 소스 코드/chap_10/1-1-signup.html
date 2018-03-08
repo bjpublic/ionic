@@ -1,0 +1,6 @@
+
+      <button ion-button outline round  [ngStyle]="buttonColor" class="one-button" (click)="checked()">
+        <ion-icon [hidden]="agreement" name="ios-radio-button-off-outline"></ion-icon><span [hidden]="agreement">&nbsp;&nbsp;&nbsp;&nbsp;동의하고 가입하기</span>
+        <ion-icon [hidden]="!agreement" name="ios-checkmark-circle-outline"></ion-icon><span [hidden]="!agreement">&nbsp;&nbsp;&nbsp;&nbsp;동의하고 가입하기</span>
+      </button>
+    

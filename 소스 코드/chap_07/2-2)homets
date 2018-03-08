@@ -1,0 +1,11 @@
+  addStyle(tr:any){
+    if(tr.transactionType=="deposit" ||tr.transactionType=="cancel" ){
+        tr.borderStyle={"border-image": "url('assets/img/blue_stick.png') 12 round",
+                        "border-image-outset": "0px 100px 0px 0px",
+                        "border-image-width": "8px"}
+    }else{
+        tr.borderStyle={"border-image": "url('assets/img/red_stick.png') 12 round",
+                        "border-image-outset": "0px 100px 0px 0px",
+                        "border-image-width": "8px"}
+    }
+  } 

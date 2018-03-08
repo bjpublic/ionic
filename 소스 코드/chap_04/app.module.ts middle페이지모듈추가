@@ -1,0 +1,10 @@
+import {MiddlePageModule} from '../pages/middle/middle.module';
+
+@NgModule({
+  ...
+  imports: [
+    BrowserModule,
+    IonicModule.forRoot(MyApp),
+    NextPageModule,
+    MiddlePageModule
+  ],

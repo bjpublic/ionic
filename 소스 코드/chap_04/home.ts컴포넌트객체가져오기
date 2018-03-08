@@ -1,0 +1,16 @@
+import { Component,ViewChild } from '@angular/core';
+import { NavController, Select } from 'ionic-angular';
+
+@Component({
+  selector: 'page-home',
+  templateUrl: 'home.html'
+})
+export class HomePage {
+
+  @ViewChild('select') selectRef:Select;
+
+  open(){
+    this.selectRef.open();  
+  }
+
+ 

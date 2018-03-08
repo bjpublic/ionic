@@ -1,0 +1,4 @@
+<ion-content padding>
+  <button ion-button (click)="moveToHomePage()"> Move to previous page</button>
+  <button ion-button (click)="addMiddlePage()"> Add middle page</button>
+</ion-content>

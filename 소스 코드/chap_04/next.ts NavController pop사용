@@ -1,0 +1,14 @@
+
+@Component({
+  selector: 'page-next',
+  templateUrl: 'next.html',
+})
+export class NextPage {
+
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
+
+  moveToHomePage(){
+      this.navCtrl.pop();
+  }
+

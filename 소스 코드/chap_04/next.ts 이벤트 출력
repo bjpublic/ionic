@@ -1,0 +1,38 @@
+
+export class NextPage {
+
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
+
+  ionViewDidLoad() {
+    console.log('[NextPage]ionViewDidLoad ');
+  }
+
+  ionViewWillEnter(){
+    console.log("[NextPage] ionViewWillEnter");
+  }
+
+  ionViewDidEnter(){
+    console.log("[NextPage] ionViewDidEnter");
+  }
+
+  ionViewWillLeave(){
+    console.log("[NextPage] ionViewWillLeave");
+  }
+
+  ionViewDidLeave(){
+    console.log("[NextPage] ionViewDidLeave");
+  }
+
+  ionViewWillUnload(){
+    console.log("[NextPage] ionViewWillUnload");
+  }
+
+  ionViewCanEnter(){
+    console.log("[NextPage] ionViewCanEnter");
+  }
+
+  ionViewCanLeave(){
+    console.log("[NextPage] ionViewCanLeave");
+  }
+}

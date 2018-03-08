@@ -1,0 +1,11 @@
+
+import {MorePageModule} from '../pages/more/more.module';
+import {NextPageModule} from '../pages/next/next.module';
+@NgModule({
+...
+  imports: [
+    BrowserModule,
+    IonicModule.forRoot(MyApp),
+    MorePageModule,
+    NextPageModule
+  ],

@@ -1,0 +1,11 @@
+export class HomePage {
+
+  constructor(public navCtrl: NavController) {
+
+  }
+
+  moveToMorePage(){
+    console.log("moveToMorePage");
+    this.navCtrl.parent.select(3);  
+  }
+}

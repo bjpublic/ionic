@@ -1,0 +1,35 @@
+
+  changeOption(option){
+    console.log("flag:"+option.flag);
+      if(option.flag===true){
+          this.amount+=option.price*this.menu.count;
+      }else{
+          this.amount-=option.price*this.menu.count;
+      }
+  }
+
+  increase(menu){
+    menu.count++;
+    this.amount = menu.price*menu.count;
+    this.options.forEach(option => {
+        if(option.flag===true){
+            console.log("option.flag true");
+            this.amount+=option.price*menu.count;
+        }
+    });
+  }
+
+  decrease(menu){
+      if(menu.count <= 1){
+            menu.count=1;
+      }else{
+            menu.count--;
+      }
+      this.amount = menu.price*menu.count;
+      this.options.forEach(option => {
+          if(option.flag===true){
+              this.amount+=option.price*menu.count;
+          }
+      });
+  }
+

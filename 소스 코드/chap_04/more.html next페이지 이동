@@ -1,0 +1,3 @@
+<ion-content padding>
+<button ion-button (click)="moveNextPage()">move to next page </button>
+</ion-content>

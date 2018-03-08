@@ -1,0 +1,12 @@
+
+export class HomePage {
+
+  constructor(public navCtrl: NavController) {
+
+  }
+
+  moveToNextPageWithSetRoot(){
+    this.navCtrl.setRoot(NextPage);
+  }
+
+  

@@ -1,0 +1,21 @@
+
+  cancelText:string="cancel";
+  okText:string="ok";
+
+  englishButtonColor:string="secondary";
+  koreanButtonColor:string="primary";
+
+  selectKorean(){
+    this.cancelText="취소";
+    this.okText="확인";
+    this.englishButtonColor="primary";
+    this.koreanButtonColor="secondary";
+  }
+
+  selectEnglish(){
+    this.cancelText="cancel";
+    this.okText="ok";
+    this.englishButtonColor="secondary";
+    this.koreanButtonColor="primary";
+  }
+}

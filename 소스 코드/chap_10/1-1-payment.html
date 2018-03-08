@@ -1,0 +1,27 @@
+<div class="pickup-area">
+<ion-row  class="pickup-method">
+  <ion-col text-center  > 
+    <button class="circle" [style.background-color]="inStoreColor" (click)="selectInStore()" ion-button> &nbsp;</button>
+  </ion-col>
+  <ion-col text-center>
+    <button class="circle" [style.background-color]="takeoutColor" (click)="selectTakeOut()" ion-button> &nbsp;</button>
+  </ion-col>
+  <ion-col text-center>
+    <button class="circle" [style.background-color]="deliveryColor" (click)="selectDelivery()" ion-button> &nbsp;</button>
+  </ion-col>
+</ion-row>
+<ion-row  class="pickup-method">
+  <ion-col [style.color]="inStoreColor"  no-padding no-margin text-center> 
+    매장
+  </ion-col>
+  <ion-col [style.color]="takeoutColor" no-padding no-margin text-center>
+    포장
+  </ion-col>
+  <ion-col [style.color]="deliveryColor" no-padding no-margin text-center>
+    배달
+  </ion-col>
+</ion-row>
+<div text-center *ngIf="takeout==2" class="delivery-text-area">
+    <ion-textarea [(ngModel)]="deliveryAddress" placeholder="배송지를 입력해주세요."></ion-textarea>
+</div>
+</div>

@@ -1,0 +1,23 @@
+
+[HomePage] ionViewCanEnter
+[HomePage] ionViewDidLoad
+[HomePage] ionViewWillEnter
+[HomePage] ionViewDidEnter
+-----------------------------------  NextPage로 이동 
+[HomePage] ionViewCanLeave
+[NextPage] ionViewCanEnter
+[NextPage]ionViewDidLoad 
+[HomePage] ionViewWillLeave
+[NextPage] ionViewWillEnter
+[NextPage] ionViewDidEnter
+[HomePage] ionViewDidLeave
+[NextPage] ionViewCanLeave
+--------------------------------  HomePage로 이동
+[HomePage] ionViewCanEnter
+[NextPage] ionViewWillLeave
+[HomePage] ionViewWillEnter
+[HomePage] ionViewDidEnter
+[NextPage] ionViewDidLeave
+[NextPage] ionViewWillUnload   -> NextPage의 경우 홈페이지와 달리 사라짐
+
+

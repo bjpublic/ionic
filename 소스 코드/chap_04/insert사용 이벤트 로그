@@ -1,0 +1,29 @@
+[HomePage] ionViewCanEnter
+[HomePage] ionViewDidLoad
+[HomePage] ionViewWillEnter
+[HomePage] ionViewDidEnter
+-------------------------------  NextPage로 이동 
+[HomePage] ionViewCanLeave
+[NextPage] ionViewCanEnter
+[NextPage] ionViewDidLoad 
+[HomePage] ionViewWillLeave
+[NextPage] ionViewWillEnter
+[NextPage] ionViewDidEnter
+[HomePage] ionViewDidLeave
+------------------------------ Previous Page로 이동
+[NextPage] ionViewCanLeave
+[MiddlePage] ionViewCanEnter
+[MiddlePage]ionViewDidLoad 
+[NextPage] ionViewWillLeave
+[MiddlePage] ionViewWillEnter
+[MiddlePage] ionViewDidEnter
+[NextPage] ionViewDidLeave
+[NextPage] ionViewWillUnload
+---------------------------- backbutton 클릭
+[MiddlePage] ionViewCanLeave
+[HomePage] ionViewCanEnter
+[MiddlePage] ionViewWillLeave
+[HomePage] ionViewWillEnter
+[HomePage] ionViewDidEnter
+[MiddlePage] ionViewDidLeave
+[MiddlePage] ionViewWillUnload

@@ -1,0 +1,31 @@
+<ion-content>
+    <div class="div-menu-detail">
+        <img [src]="dirPath+menu.imagePath">
+        <p class="p-name">{{menu.menuName}}</p>
+        <p class="p-description">{{"설명:"+menu.description}}</p>
+    </div>
+    <div class="div-amount">
+        <div class="div-price-area">
+            <span>가격</span>
+            <span class="sub3-color">{{menu.price}}</span><span>원</span>
+        </div>
+        <div class="div-options">
+            <p>추가옵션</p>
+            <div *ngFor="let option of options">
+                <ion-item class="bg-sub1" no-lines>
+                    <ion-label>{{option.name}}</ion-label>
+                    <ion-label class="sub3-color">{{"+"+option.price}}</ion-label>
+                    <ion-toggle [(ngModel)]="option.flag" (ionChange)="changeOption(option)" color="subColor2"></ion-toggle>
+                </ion-item>
+                <ion-row radio-group [(ngModel)]="option.default" *ngIf="option.choice!==undefined && option.flag">
+                    <ion-col  *ngFor="let choice of option.choice">
+                         <ion-item class="bg-sub1" no-lines >
+                            <ion-label>{{choice}}</ion-label>
+                            <ion-radio  color="subColor2" [value]="choice"></ion-radio>
+                        </ion-item>
+                    </ion-col>
+                </ion-row>                
+            </div>
+        </div>
+    </div>
+</ion-content>

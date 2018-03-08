@@ -1,0 +1,15 @@
+import {MiddlePage} from '../middle/middle';
+
+@IonicPage()
+@Component({
+  selector: 'page-next',
+  templateUrl: 'next.html',
+})
+export class NextPage {
+
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
+
+  addMiddlePage(){
+    this.navCtrl.insert(1,MiddlePage);
+  }

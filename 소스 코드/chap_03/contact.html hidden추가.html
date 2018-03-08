@@ -1,0 +1,10 @@
+  <br>
+  <br>
+  <div [hidden]="hiddenFlag" >
+    Is it shown?
+  </div>
+  <div>
+  <button ion-button (click)="hideClick()" [hidden]="hiddenFlag">hide </button>
+  <button ion-button (click)="showClick()" [hidden]="!hiddenFlag">show </button>
+  </div>
+  <br>

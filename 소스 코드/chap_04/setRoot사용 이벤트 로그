@@ -1,0 +1,15 @@
+[HomePage] ionViewCanEnter
+[HomePage] ionViewDidLoad
+[HomePage] ionViewWillEnter
+[HomePage] ionViewDidEnter
+-----------------------------------  NextPage로 이동 
+[HomePage] ionViewCanLeave
+[NextPage] ionViewCanEnter
+[NextPage]ionViewDidLoad 
+[HomePage] ionViewWillLeave
+[NextPage] ionViewWillEnter
+[NextPage] ionViewDidEnter
+[HomePage] ionViewDidLeave
+[HomePage] ionViewWillUnload -> HomePage가 메모리에서 사라짐
+
+
